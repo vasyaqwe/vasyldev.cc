@@ -2,8 +2,9 @@ import type { Metadata } from "next"
 import "./globals.css"
 import Image from "next/image"
 import logo from "@public/logo.svg"
-import { Button } from "@/components/ui/button"
+import { buttonVariants } from "@/components/ui/button"
 import { ArrowRightCircleIcon } from "@heroicons/react/24/outline"
+import { cn } from "@/lib/utils"
 
 export const metadata: Metadata = {
    title: "vasyldev.cc",
@@ -58,14 +59,20 @@ export default function RootLayout({
                         </a>
                      </li>
                      <li>
-                        <Button
-                           className="text-muted-foreground "
-                           variant={"outline"}
-                           size={"sm"}
+                        <a
+                           className={cn(
+                              buttonVariants({
+                                 variant: "outline",
+                                 size: "sm",
+                              }),
+                              "text-muted-foreground "
+                           )}
+                           target="_blank"
+                           href="https://cal.com/vasyldev/15min"
                         >
                            contact me
                            <ArrowRightCircleIcon className="mt-0.5 size-5" />
-                        </Button>
+                        </a>
                      </li>
                   </ul>
                </nav>
@@ -75,7 +82,8 @@ export default function RootLayout({
                <div className="container flex items-center justify-between">
                   <p> © {new Date().getFullYear()} Vasyl Polishchuk</p>
                   <a
-                     href="#"
+                     target="_blank"
+                     href="https://github.com/vasyaqwe/vasyldev.cc"
                      className="underline hover:text-foreground"
                   >
                      view source code

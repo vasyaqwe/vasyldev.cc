@@ -4,6 +4,7 @@ import { Icons } from "@/components/ui/icons"
 import { cn } from "@/lib/utils"
 import { ArrowRightCircleIcon, LinkIcon } from "@heroicons/react/24/outline"
 import Image from "next/image"
+import ananest from "@public/ananest.png"
 
 const tools = [
    {
@@ -62,7 +63,7 @@ const tools = [
 export default function Home() {
    return (
       <>
-         <section className="mt-14">
+         <section className="mt-12 md:mt-16">
             <h1 className=" text-3xl">
                <Image
                   src={"/avatar.jpg"}
@@ -94,9 +95,9 @@ export default function Home() {
                View latest project <ArrowRightCircleIcon className="size-5" />
             </a>
          </section>
-         <section className="mt-14">
+         <section className="mt-12 md:mt-16">
             <h2 className="text-2xl">Tools & tech I use</h2>
-            <Card className="mt-4 flex flex-wrap justify-center gap-2 py-4 font-medium">
+            <Card className="mt-4 flex flex-wrap justify-center gap-3 py-4 font-medium">
                {tools.map((t) => (
                   <a
                      key={t.name}
@@ -113,10 +114,10 @@ export default function Home() {
                ))}
             </Card>
          </section>
-         <section className="mt-14">
+         <section className="mt-12 md:mt-16">
             <h2 className="text-2xl">Experience</h2>
 
-            <h3 className="mt-5 flex items-center gap-1.5 font-primary">
+            <h3 className="mt-6 flex items-center gap-1.5 font-primary">
                2023{" "}
                <span className="h-px w-full bg-border">
                   {" "}
@@ -124,13 +125,11 @@ export default function Home() {
                </span>{" "}
                now
             </h3>
-            <p className="mt-1">
+            <p className="md:mt-5">
                <Image
-                  src={"/ananest.png"}
+                  src={ananest}
                   alt="Ananest"
-                  className="-ml-2 md:inline-block"
-                  width={45}
-                  height={45}
+                  className="mr-2 max-w-14 max-md:mb-3 max-md:mt-4 md:-mt-2 md:inline-block md:max-w-10"
                />
                <strong className="font-medium">
                   {" "}
@@ -143,9 +142,9 @@ export default function Home() {
                   </a>
                   .
                </strong>{" "}
-               Building all front-end with a small team of back-end devs.
+               Leading all front-end with a small team of back-end devs.
             </p>
-            <h3 className="mt-5 flex items-center gap-1.5 font-primary">
+            <h3 className="mt-6 flex items-center gap-1.5 font-primary">
                2022{" "}
                <span className="h-px w-full bg-border">
                   {" "}
@@ -153,99 +152,169 @@ export default function Home() {
                </span>{" "}
                now
             </h3>
-            <p className="mt-3">
-               <Icons.upwork className="mr-2.5 size-9 max-md:mb-1 md:inline-block" />
+            <p className="md:mt-5">
+               <Icons.upwork className="mr-2.5 h-8 w-14 max-md:mb-2 max-md:mt-4 md:inline-block md:w-10" />
                <strong className="font-medium">Upwork freelancing.</strong> Over
-               30 different websites with 100% Job Success.
+               30 different projects with 100% Job Success.
             </p>
          </section>
-         <section className="mt-14">
-            <h2 className="text-2xl">Recent projects</h2>
-            <h3 className="mt-10 flex items-center gap-2 font-primary text-lg font-medium">
-               <Image
-                  src={"/ananest-blog.png"}
-                  alt="Ananest blog"
-                  className="-mt-3"
-                  width={35}
-                  height={35}
-               />
-               Ananest blog
-               <a
-                  href="https://blog.ananest.com"
-                  target="_blank"
-                  className="ml-auto text-base font-normal underline"
-               >
-                  view live
-                  <LinkIcon className="ml-1 inline-block size-4" />
-               </a>
-            </h3>
-            <p className="mt-3 border-b pb-5">
-               A static blog I designed & coded at work.
-            </p>
-
-            <h3 className="mt-6 flex items-center gap-2 font-primary text-lg font-medium">
-               <Image
-                  src={"/winsoft.png"}
-                  alt="Winsoft"
-                  width={35}
-                  height={35}
-               />
-               Winsoft
-               <a
-                  href="https://www.soft.win"
-                  target="_blank"
-                  className="ml-auto text-base font-normal underline"
-               >
-                  view live
-                  <LinkIcon className="ml-1 inline-block size-4" />
-               </a>
-            </h3>
-            <p className="mt-3 border-b pb-5">
-               A landing page for a software development company.
-            </p>
-            <h3 className="mt-6 flex items-center gap-2 font-primary text-lg font-medium">
-               <Image
-                  src={"/wallow.svg"}
-                  alt="Wallow"
-                  width={35}
-                  height={35}
-               />
-               Wallow
-               <a
-                  href="https://www.wallow.app"
-                  target="_blank"
-                  className="ml-auto text-base font-normal underline"
-               >
-                  view live
-                  <LinkIcon className="ml-1 inline-block size-4" />
-               </a>
-            </h3>
-            <p className="mt-3 border-b pb-5">
-               A real-time messaging & issue reporting app for teams.
-            </p>
-            <h3 className="mt-6 flex items-center gap-2 font-primary text-lg font-medium">
-               <Image
-                  src={"/vfu.svg"}
-                  alt="Volunteers for Ukraine"
-                  width={35}
-                  height={35}
-               />
-               Volunteers for Ukraine
-               <a
-                  href="https://www.wallow.app"
-                  target="_blank"
-                  className="ml-auto text-base font-normal underline"
-               >
-                  view live
-                  <LinkIcon className="ml-1 inline-block size-4" />
-               </a>
-            </h3>
-            <p className="mt-3">
-               A landing page for a non-profit organization providing aid in
-               Ukraine.
-            </p>
+         <section className="mt-12 md:mt-16">
+            <h2 className="mb-6 text-2xl">Recent projects</h2>
+            <div className="flex gap-2 border-b pb-6 max-md:flex-col md:gap-4">
+               <div className="flex items-center justify-between">
+                  <Image
+                     src={"/ananest-blog.png"}
+                     alt="Ananest blog"
+                     className="object-contain max-md:max-w-[56px]"
+                     width={58}
+                     height={58}
+                  />
+                  <a
+                     href="https://blog.ananest.com"
+                     target="_blank"
+                     className={cn(
+                        "mt-1 md:hidden",
+                        buttonVariants({ size: "sm", variant: "default" })
+                     )}
+                  >
+                     view live
+                     <LinkIcon className="ml-1 inline-block size-4" />
+                  </a>
+               </div>
+               <div className="w-full max-md:mt-1">
+                  <h3 className="flex items-center gap-3 font-primary text-lg font-medium">
+                     Ananest blog
+                     <a
+                        href="https://blog.ananest.com"
+                        target="_blank"
+                        className="ml-auto text-base font-normal underline max-md:hidden"
+                     >
+                        view live
+                        <LinkIcon className="ml-1 inline-block size-4" />
+                     </a>
+                  </h3>
+                  <p className="mt-2">
+                     A static blog I coded at work. I also designed it!
+                  </p>
+               </div>
+            </div>
+            <div className="flex gap-2 border-b py-7 max-md:flex-col md:gap-4">
+               <div className="flex items-center justify-between">
+                  <Image
+                     src={"/winsoft.svg"}
+                     alt="Winsoft"
+                     width={58}
+                     height={58}
+                     className="max-md:max-w-[54px]"
+                  />
+                  <a
+                     href="https://www.soft.win"
+                     target="_blank"
+                     className={cn(
+                        "mt-1 md:hidden",
+                        buttonVariants({ size: "sm", variant: "default" })
+                     )}
+                  >
+                     view live
+                     <LinkIcon className="ml-1 inline-block size-4" />
+                  </a>
+               </div>
+               <div className="w-full max-md:mt-1">
+                  <h3 className="flex items-center gap-3 font-primary text-lg font-medium">
+                     Winsoft
+                     <a
+                        href="https://www.soft.win"
+                        target="_blank"
+                        className="ml-auto text-base font-normal underline max-md:hidden"
+                     >
+                        view live
+                        <LinkIcon className="ml-1 inline-block size-4" />
+                     </a>
+                  </h3>
+                  <p className="mt-2">
+                     A landing page for a software development company.
+                  </p>
+               </div>
+            </div>
+            <div className="flex gap-2 border-b py-7 max-md:flex-col md:gap-4">
+               <div className="flex items-center justify-between">
+                  <Image
+                     src={"/wallow.svg"}
+                     alt="Wallow"
+                     width={58}
+                     height={58}
+                     className="max-md:max-w-[53px]"
+                  />
+                  <a
+                     href="https://www.wallow.app"
+                     target="_blank"
+                     className={cn(
+                        "mt-1 md:hidden",
+                        buttonVariants({ size: "sm", variant: "default" })
+                     )}
+                  >
+                     view live
+                     <LinkIcon className="ml-1 inline-block size-4" />
+                  </a>
+               </div>
+               <div className="w-full max-md:mt-1">
+                  <h3 className="flex items-center gap-3 font-primary text-lg font-medium">
+                     Wallow
+                     <a
+                        href="https://www.wallow.app"
+                        target="_blank"
+                        className="ml-auto text-base font-normal underline max-md:hidden"
+                     >
+                        view live
+                        <LinkIcon className="ml-1 inline-block size-4" />
+                     </a>
+                  </h3>
+                  <p className="mt-2">
+                     A real-time messaging & issue reporting app for teams.
+                  </p>
+               </div>
+            </div>
+            <div className="flex gap-2 pt-6 max-md:flex-col md:gap-4">
+               <div className="flex items-center justify-between">
+                  <Image
+                     src={"/vfu.svg"}
+                     alt="Volunteers for Ukraine"
+                     width={58}
+                     height={58}
+                     className="max-md:max-w-[54px]"
+                  />
+                  <a
+                     href="https://volunteersforukraine.org/"
+                     target="_blank"
+                     className={cn(
+                        "mt-1 md:hidden",
+                        buttonVariants({ size: "sm", variant: "default" })
+                     )}
+                  >
+                     view live
+                     <LinkIcon className="ml-1 inline-block size-4" />
+                  </a>
+               </div>
+               <div className="w-full max-md:mt-1">
+                  <h3 className="flex items-center gap-3 font-primary text-lg font-medium">
+                     Volunteers for Ukraine
+                     <a
+                        href="https://volunteersforukraine.org/"
+                        target="_blank"
+                        className="ml-auto text-base font-normal underline max-md:hidden"
+                     >
+                        view live
+                        <LinkIcon className="ml-1 inline-block size-4" />
+                     </a>
+                  </h3>
+                  <p className="mt-2">
+                     A landing page for a non-profit organization providing aid
+                     in Ukraine.
+                  </p>
+               </div>
+            </div>
          </section>
-         <section className="mt-14">
+         <section className="mt-12 md:mt-16">
             <div className="flex items-center justify-between">
                <h2 className="text-2xl">Testimonials</h2>
                <a

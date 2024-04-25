@@ -57,10 +57,10 @@ export const Icons = {
                y2="344"
                gradientUnits="userSpaceOnUse"
             >
-               <stop stop-color="#41D1FF" />
+               <stop stopColor="#41D1FF" />
                <stop
                   offset="1"
-                  stop-color="#BD34FE"
+                  stopColor="#BD34FE"
                />
             </linearGradient>
             <linearGradient
@@ -71,14 +71,14 @@ export const Icons = {
                y2="292.989"
                gradientUnits="userSpaceOnUse"
             >
-               <stop stop-color="#FFEA83" />
+               <stop stopColor="#FFEA83" />
                <stop
                   offset="0.0833333"
-                  stop-color="#FFDD35"
+                  stopColor="#FFDD35"
                />
                <stop
                   offset="1"
-                  stop-color="#FFA800"
+                  stopColor="#FFA800"
                />
             </linearGradient>
          </defs>
@@ -275,7 +275,7 @@ export const Icons = {
          <path
             d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0625L99.1935 40.0625C107.384 40.0625 111.952 49.5226 106.859 55.9372L63.7076 110.284Z"
             fill="#249361"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
          />
          <path
             d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z"
@@ -290,10 +290,10 @@ export const Icons = {
                y2="71.8293"
                gradientUnits="userSpaceOnUse"
             >
-               <stop stop-color="#249361" />
+               <stop stopColor="#249361" />
                <stop
                   offset="1"
-                  stop-color="#3ECF8E"
+                  stopColor="#3ECF8E"
                />
             </linearGradient>
             <linearGradient
@@ -307,7 +307,7 @@ export const Icons = {
                <stop />
                <stop
                   offset="1"
-                  stop-opacity="0"
+                  stopOpacity="0"
                />
             </linearGradient>
          </defs>
