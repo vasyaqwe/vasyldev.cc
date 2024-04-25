@@ -29,9 +29,9 @@ const tools = [
       logo: <Icons.vite className="size-[25px]" />,
    },
    {
-      name: "node.js",
-      href: "https://nodejs.org",
-      logo: <Icons.nodejs className="size-[25px]" />,
+      name: "resend",
+      href: "https://resend.com",
+      logo: <Icons.resend className="size-[20px]" />,
    },
    {
       name: "drizzle orm",

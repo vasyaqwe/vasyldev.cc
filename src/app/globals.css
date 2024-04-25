@@ -29,12 +29,6 @@
   }
 }
 
-@layer utilities {
-  .mask-scroll-container {
-    mask-image: linear-gradient(to left, transparent, white 40%, white 100%, transparent 100%);
-  }
-}
-
 @layer base {
   * {
     @apply border-border;
