@@ -92,7 +92,7 @@ export default function Home() {
             </h1>
             <p className="my-5">
                A full-stack developer based in Ukraine. I create all sorts of
-               web apps, both functional and good-looking. With{" "}
+               websites, both functional and good-looking. With{" "}
                <a
                   href="https://nextjs.org"
                   target="_blank"

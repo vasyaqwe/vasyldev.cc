@@ -5,6 +5,9 @@ import logo from "@public/logo.svg"
 import { buttonVariants } from "@/components/ui/button"
 import { ArrowRightCircleIcon } from "@heroicons/react/24/outline"
 import { cn } from "@/lib/utils"
+import { Outfit } from "next/font/google"
+
+const font = Outfit({ subsets: ["latin"], variable: "--font-primary" })
 
 export const metadata: Metadata = {
    title: "vasyldev.cc",
@@ -19,7 +22,10 @@ export default function RootLayout({
    return (
       <html
          lang="en"
-         className="font-primary text-sm leading-6 antialiased"
+         className={cn(
+            "font-primary text-sm leading-6 antialiased",
+            font.variable
+         )}
       >
          <body className=" pt-5">
             <header className="container flex items-center justify-between pb-4">

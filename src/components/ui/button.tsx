@@ -11,7 +11,7 @@ const buttonVariants = cva(
    {
       variants: {
          variant: {
-            default: `bg-gradient-to-tr from-primary/90 font-medium to-primary/70 text-background border-primary`,
+            default: `bg-gradient-to-tr from-primary/85 font-medium to-primary/70 text-background border-primary`,
             outline: `bg-background hover:border-border border-border/70 backdrop-blur-md hover:bg-border/10 `,
          },
          size: {
