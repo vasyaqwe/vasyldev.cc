@@ -83,9 +83,9 @@ export default function Home() {
                <Image
                   src={"/avatar.jpg"}
                   alt="Vasyl's avatar"
-                  width={70}
+                  width={45}
+                  height={45}
                   priority
-                  height={70}
                   className="-mt-1 mr-2 inline-block aspect-square size-11 rounded-2xl object-cover object-top"
                />
                Hello — I'm Vasyl,
@@ -143,6 +143,8 @@ export default function Home() {
             <p className="md:mt-5">
                <Image
                   src={ananest}
+                  width={80}
+                  height={40}
                   alt="Ananest"
                   className="mr-2 max-w-14 max-md:mb-3 max-md:mt-4 md:-mt-2 md:inline-block md:max-w-10"
                />
@@ -220,7 +222,6 @@ export default function Home() {
                      alt="Winsoft"
                      width={58}
                      height={58}
-                     className="max-md:max-w-[54px]"
                   />
                   <a
                      href="https://www.soft.win"

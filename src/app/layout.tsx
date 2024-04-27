@@ -1,11 +1,10 @@
 import type { Metadata } from "next"
 import "./globals.css"
-import Image from "next/image"
-import logo from "@public/logo.svg"
 import { buttonVariants } from "@/components/ui/button"
 import { ArrowRightCircleIcon } from "@heroicons/react/24/outline"
 import { cn } from "@/lib/utils"
 import { Outfit } from "next/font/google"
+import { Icons } from "@/components/ui/icons"
 
 const font = Outfit({ subsets: ["latin"], variable: "--font-primary" })
 
@@ -29,11 +28,7 @@ export default function RootLayout({
       >
          <body className=" pt-5">
             <header className="container flex items-center justify-between pb-4">
-               <Image
-                  src={logo}
-                  className="max-w-[22px] opacity-65"
-                  alt="logo"
-               />
+               <Icons.logo className="size-[22px] opacity-65" />
                <nav>
                   <ul className="flex items-center gap-3">
                      <li>
