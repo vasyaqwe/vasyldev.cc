@@ -82,8 +82,9 @@ export default function Home() {
                <Image
                   src={"/avatar.jpg"}
                   alt="Vasyl's avatar"
-                  width={45}
-                  height={45}
+                  width={60}
+                  quality={95}
+                  height={60}
                   priority
                   className="-mt-1 mr-2 inline-block aspect-square size-11 rounded-2xl object-cover object-top"
                />
