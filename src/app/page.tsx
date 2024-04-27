@@ -12,7 +12,6 @@ const tools = [
       href: "https://nextjs.org",
       logo: <Icons.nextjs className="size-7" />,
    },
-
    {
       name: "react",
       href: "https://react.dev",
@@ -34,11 +33,6 @@ const tools = [
       logo: <Icons.resend className="size-[20px]" />,
    },
    {
-      name: "drizzle orm",
-      href: "https://orm.drizzle.team/",
-      logo: <Icons.drizzle className="size-8" />,
-   },
-   {
       name: "prisma",
       href: "https://prisma.io/",
       logo: <Icons.prisma className="size-[25px]" />,
@@ -54,9 +48,19 @@ const tools = [
       logo: <Icons.tailwindcss className="size-7" />,
    },
    {
+      name: "drizzle orm",
+      href: "https://orm.drizzle.team/",
+      logo: <Icons.drizzle className="size-8" />,
+   },
+   {
       name: "typescript",
       href: "https://www.typescriptlang.org/",
       logo: <Icons.typescript className="size-6" />,
+   },
+   {
+      name: "sentry",
+      href: "https://sentry.io/welcome/",
+      logo: <Icons.sentry className="size-6" />,
    },
    {
       name: "tanstack-query",
@@ -67,11 +71,6 @@ const tools = [
       name: "framer-motion",
       href: "https://www.framer.com/motion/",
       logo: <Icons.framerMotion className="size-6" />,
-   },
-   {
-      name: "sentry",
-      href: "https://sentry.io/welcome/",
-      logo: <Icons.sentry className="size-6" />,
    },
 ]
 
@@ -121,7 +120,10 @@ export default function Home() {
                      style={{
                         transform: `rotate(${Math.random() > 0.5 ? 4 : -4}deg)`,
                      }}
-                     className={cn(buttonVariants({ variant: "outline" }))}
+                     className={cn(
+                        buttonVariants({ variant: "outline" }),
+                        "max-sm:flex-grow"
+                     )}
                   >
                      {t.logo}
                      {t.name}
