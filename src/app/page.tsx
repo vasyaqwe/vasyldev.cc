@@ -103,7 +103,7 @@ export default function Home() {
                as my framework of choice.
             </p>
             <a
-               href="https://soft.win/"
+               href="https://blog.ananest.com"
                target="_blank"
                className={buttonVariants({ size: "lg" })}
             >
