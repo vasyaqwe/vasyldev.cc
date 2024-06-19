@@ -8,9 +8,9 @@ import ananest from "@public/ananest.png"
 
 const tools = [
    {
-      name: "next.js",
-      href: "https://nextjs.org",
-      logo: <Icons.nextjs className="size-7" />,
+      name: "vite",
+      href: "https://vite.dev",
+      logo: <Icons.vite className="size-[25px]" />,
    },
    {
       name: "react",
@@ -18,14 +18,9 @@ const tools = [
       logo: <Icons.react className="size-[25px]" />,
    },
    {
-      name: "vercel",
-      href: "https://vercel.com",
-      logo: <Icons.vercel className="size-6" />,
-   },
-   {
-      name: "vite",
-      href: "https://vite.dev",
-      logo: <Icons.vite className="size-[25px]" />,
+      name: "hono",
+      href: "https://hono.dev",
+      logo: <Icons.hono className="size-[24px]" />,
    },
    {
       name: "resend",
@@ -33,9 +28,26 @@ const tools = [
       logo: <Icons.resend className="size-[20px]" />,
    },
    {
-      name: "prisma",
-      href: "https://prisma.io/",
-      logo: <Icons.prisma className="size-[25px]" />,
+      name: "tanstack",
+      href: "https://tanstack.com",
+      logo: (
+         <Image
+            width={25}
+            height={25}
+            src={"/tanstack.png"}
+            alt="Tanstack"
+         />
+      ),
+   },
+   {
+      name: "trpc",
+      href: "https://trpc.io",
+      logo: <Icons.trpc className="size-[24px]" />,
+   },
+   {
+      name: "turborepo",
+      href: "https://turbo.build/repo",
+      logo: <Icons.turborepo className="size-6" />,
    },
    {
       name: "supabase",
@@ -43,34 +55,35 @@ const tools = [
       logo: <Icons.supabase className="size-[25px]" />,
    },
    {
-      name: "tailwindcss",
-      href: "https://tailwindcss.com",
-      logo: <Icons.tailwindcss className="size-7" />,
-   },
-   {
-      name: "drizzle orm",
-      href: "https://orm.drizzle.team/",
-      logo: <Icons.drizzle className="size-8" />,
-   },
-   {
       name: "typescript",
       href: "https://www.typescriptlang.org/",
       logo: <Icons.typescript className="size-6" />,
    },
    {
-      name: "sentry",
-      href: "https://sentry.io/welcome/",
-      logo: <Icons.sentry className="size-6" />,
+      name: "bun",
+      href: "https://bun.sh",
+      logo: <Icons.bun className="size-7" />,
+   },
+
+   {
+      name: "tailwindcss",
+      href: "https://tailwindcss.com",
+      logo: <Icons.tailwindcss className="size-[28px]" />,
    },
    {
-      name: "tanstack-query",
-      href: "https://tanstack.com/query/latest",
-      logo: <Icons.reactQuery className="size-6" />,
+      name: "drizzle-orm",
+      href: "https://orm.drizzle.team/",
+      logo: <Icons.drizzle className="size-[31px]" />,
    },
    {
       name: "framer-motion",
       href: "https://www.framer.com/motion/",
-      logo: <Icons.framerMotion className="size-6" />,
+      logo: <Icons.framerMotion className="size-[23px]" />,
+   },
+   {
+      name: "next.js",
+      href: "https://nextjs.org",
+      logo: <Icons.nextjs className="size-7" />,
    },
 ]
 
@@ -112,7 +125,7 @@ export default function Home() {
          </section>
          <section className="mt-12 md:mt-16">
             <h2 className="text-2xl">Tools & tech I use</h2>
-            <Card className="mt-4 flex flex-wrap justify-center gap-1 py-4 font-medium">
+            <Card className="mt-4 flex flex-wrap justify-center gap-1 py-4 text-[1.05rem] font-medium">
                {tools.map((t) => (
                   <a
                      key={t.name}
