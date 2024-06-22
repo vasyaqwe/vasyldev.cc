@@ -48,8 +48,7 @@
          "arrowParentheses": "always",
          "bracketSpacing": true,
          "bracketSameLine": false,
-         "quoteStyle": "double",
-         "attributePosition": "auto"
+         "quoteStyle": "double"
       }
    }
 }
