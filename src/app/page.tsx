@@ -107,14 +107,23 @@ export default function Home() {
                A full-stack developer based in Ukraine. I create all sorts of
                websites, both functional and good-looking. With{" "}
                <a
-                  href="https://nextjs.org"
+                  href="https://react.dev"
                   target="_blank"
                   className="underline"
                   rel="noreferrer"
                >
-                  Next.js
+                  React
                </a>{" "}
-               as my framework of choice.
+               &{" "}
+               <a
+                  target="_blank"
+                  href="https://tanstack.com"
+                  rel="noreferrer"
+                  className="underline"
+               >
+                  Tanstack
+               </a>
+               .
             </p>
             <a
                href="https://blog.ananest.com"
