@@ -3,8 +3,8 @@ import { Card } from "@/components/ui/card"
 import { Icons } from "@/components/ui/icons"
 import { cn } from "@/lib/utils"
 import { ArrowRightCircleIcon, LinkIcon } from "@heroicons/react/24/outline"
-import Image from "next/image"
 import ananest from "@public/ananest.png"
+import Image from "next/image"
 
 const tools = [
    {
@@ -110,6 +110,7 @@ export default function Home() {
                   href="https://nextjs.org"
                   target="_blank"
                   className="underline"
+                  rel="noreferrer"
                >
                   Next.js
                </a>{" "}
@@ -119,13 +120,14 @@ export default function Home() {
                href="https://blog.ananest.com"
                target="_blank"
                className={buttonVariants({ size: "lg" })}
+               rel="noreferrer"
             >
                View latest project <ArrowRightCircleIcon className="size-5" />
             </a>
          </section>
          <section className="mt-12 md:mt-16">
             <h2 className="text-2xl">Tools & tech I use</h2>
-            <Card className="mt-4 flex flex-wrap justify-center gap-1 py-4 text-[1.05rem] font-medium">
+            <Card className="mt-4 flex flex-wrap justify-center gap-1 py-4 font-medium text-[1.05rem]">
                {tools.map((t) => (
                   <a
                      key={t.name}
@@ -136,8 +138,9 @@ export default function Home() {
                      }}
                      className={cn(
                         buttonVariants({ variant: "outline" }),
-                        "max-sm:flex-grow"
+                        "max-sm:flex-grow",
                      )}
+                     rel="noreferrer"
                   >
                      {t.logo}
                      {t.name}
@@ -162,7 +165,7 @@ export default function Home() {
                   width={80}
                   height={40}
                   alt="Ananest"
-                  className="mr-2 max-w-14 max-md:mb-3 max-md:mt-4 md:-mt-2 md:inline-block md:max-w-10"
+                  className="md:-mt-2 mr-2 max-w-14 max-md:mt-4 max-md:mb-3 md:inline-block md:max-w-10"
                />
                <strong className="font-medium">
                   {" "}
@@ -186,7 +189,7 @@ export default function Home() {
                now
             </h3>
             <p className="md:mt-5">
-               <Icons.upwork className="mr-2.5 h-8 w-14 max-md:mb-2 max-md:mt-4 md:inline-block md:w-10" />
+               <Icons.upwork className="mr-2.5 h-8 w-14 max-md:mt-4 max-md:mb-2 md:inline-block md:w-10" />
                <strong className="font-medium">Upwork freelancing.</strong> Over
                30 different projects with 100% Job Success.
             </p>
@@ -207,20 +210,22 @@ export default function Home() {
                      target="_blank"
                      className={cn(
                         "mt-1 md:hidden",
-                        buttonVariants({ size: "sm", variant: "default" })
+                        buttonVariants({ size: "sm", variant: "default" }),
                      )}
+                     rel="noreferrer"
                   >
                      view live
                      <LinkIcon className="ml-1 inline-block size-4" />
                   </a>
                </div>
                <div className="w-full max-md:mt-1">
-                  <h3 className="flex items-center gap-3 font-primary text-lg font-medium">
+                  <h3 className="flex items-center gap-3 font-medium font-primary text-lg">
                      Ananest blog
                      <a
                         href="https://blog.ananest.com"
                         target="_blank"
-                        className="ml-auto text-base font-normal underline max-md:hidden"
+                        className="ml-auto font-normal text-base underline max-md:hidden"
+                        rel="noreferrer"
                      >
                         view live
                         <LinkIcon className="ml-1 inline-block size-4" />
@@ -244,20 +249,22 @@ export default function Home() {
                      target="_blank"
                      className={cn(
                         "mt-1 md:hidden",
-                        buttonVariants({ size: "sm", variant: "default" })
+                        buttonVariants({ size: "sm", variant: "default" }),
                      )}
+                     rel="noreferrer"
                   >
                      view live
                      <LinkIcon className="ml-1 inline-block size-4" />
                   </a>
                </div>
                <div className="w-full max-md:mt-1">
-                  <h3 className="flex items-center gap-3 font-primary text-lg font-medium">
+                  <h3 className="flex items-center gap-3 font-medium font-primary text-lg">
                      Winsoft
                      <a
                         href="https://www.soft.win"
                         target="_blank"
-                        className="ml-auto text-base font-normal underline max-md:hidden"
+                        className="ml-auto font-normal text-base underline max-md:hidden"
+                        rel="noreferrer"
                      >
                         view live
                         <LinkIcon className="ml-1 inline-block size-4" />
@@ -282,20 +289,22 @@ export default function Home() {
                      target="_blank"
                      className={cn(
                         "mt-1 md:hidden",
-                        buttonVariants({ size: "sm", variant: "default" })
+                        buttonVariants({ size: "sm", variant: "default" }),
                      )}
+                     rel="noreferrer"
                   >
                      view live
                      <LinkIcon className="ml-1 inline-block size-4" />
                   </a>
                </div>
                <div className="w-full max-md:mt-1">
-                  <h3 className="flex items-center gap-3 font-primary text-lg font-medium">
+                  <h3 className="flex items-center gap-3 font-medium font-primary text-lg">
                      Wallow
                      <a
                         href="https://www.wallow.app"
                         target="_blank"
-                        className="ml-auto text-base font-normal underline max-md:hidden"
+                        className="ml-auto font-normal text-base underline max-md:hidden"
+                        rel="noreferrer"
                      >
                         view live
                         <LinkIcon className="ml-1 inline-block size-4" />
@@ -320,20 +329,22 @@ export default function Home() {
                      target="_blank"
                      className={cn(
                         "mt-1 md:hidden",
-                        buttonVariants({ size: "sm", variant: "default" })
+                        buttonVariants({ size: "sm", variant: "default" }),
                      )}
+                     rel="noreferrer"
                   >
                      view live
                      <LinkIcon className="ml-1 inline-block size-4" />
                   </a>
                </div>
                <div className="w-full max-md:mt-1">
-                  <h3 className="flex items-center gap-3 font-primary text-lg font-medium">
+                  <h3 className="flex items-center gap-3 font-medium font-primary text-lg">
                      Volunteers for Ukraine
                      <a
                         href="https://volunteersforukraine.org/"
                         target="_blank"
-                        className="ml-auto text-base font-normal underline max-md:hidden"
+                        className="ml-auto font-normal text-base underline max-md:hidden"
+                        rel="noreferrer"
                      >
                         view live
                         <LinkIcon className="ml-1 inline-block size-4" />
@@ -354,8 +365,9 @@ export default function Home() {
                   href="https://www.upwork.com/freelancers/~015c1b113a62e11b13?viewMode=1"
                   className={cn(
                      "-mt-1",
-                     buttonVariants({ variant: "outline", size: "sm" })
+                     buttonVariants({ variant: "outline", size: "sm" }),
                   )}
+                  rel="noreferrer"
                >
                   view all
                   <ArrowRightCircleIcon className="size-4" />
@@ -374,6 +386,7 @@ export default function Home() {
                      target="_blank"
                      href="https://www.soft.win"
                      className="underline hover:text-foreground"
+                     rel="noreferrer"
                   >
                      Winsoft
                   </a>
@@ -390,6 +403,7 @@ export default function Home() {
                      target="_blank"
                      href="https://wallow.app"
                      className="underline hover:text-foreground"
+                     rel="noreferrer"
                   >
                      Wallow
                   </a>
@@ -406,6 +420,7 @@ export default function Home() {
                      target="_blank"
                      href="https://volunteersforukraine.org/"
                      className="underline hover:text-foreground"
+                     rel="noreferrer"
                   >
                      VfU
                   </a>

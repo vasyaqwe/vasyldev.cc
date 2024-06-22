@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
-import { cva, type VariantProps } from "class-variance-authority"
+import { type VariantProps, cva } from "class-variance-authority"
 
 const cardVariants = cva(
    `border bg-muted border-border/40 text-muted-foreground p-3 rounded-lg`,
@@ -15,7 +15,7 @@ const cardVariants = cva(
       defaultVariants: {
          variant: "default",
       },
-   }
+   },
 )
 
 export interface CardProps
@@ -29,7 +29,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
          className={cn(cardVariants({ variant, className }))}
          {...props}
       />
-   )
+   ),
 )
 Card.displayName = "Card"
 
@@ -63,7 +63,7 @@ const CardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
    <p
       ref={ref}
-      className={cn("text-sm text-muted-foreground", className)}
+      className={cn("text-muted-foreground text-sm", className)}
       {...props}
    />
 ))

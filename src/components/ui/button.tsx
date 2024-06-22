@@ -1,5 +1,5 @@
+import { type VariantProps, cva } from "class-variance-authority"
 import * as React from "react"
-import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
 
@@ -17,7 +17,7 @@ const buttonVariants = cva(
          size: {
             default: "h-10 px-3",
             sm: "h-9 px-2",
-            lg: "h-10 px-4 gap-2",
+            lg: "h-10 gap-2 px-4",
             icon: "size-8 gap-0",
          },
       },
@@ -25,7 +25,7 @@ const buttonVariants = cva(
          variant: "default",
          size: "default",
       },
-   }
+   },
 )
 
 export interface ButtonProps
@@ -43,7 +43,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             {...props}
          />
       )
-   }
+   },
 )
 Button.displayName = "Button"
 
