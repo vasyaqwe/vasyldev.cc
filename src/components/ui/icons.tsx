@@ -205,11 +205,11 @@ export const Icons = {
                id="a"
             >
                <stop
-                  stop-color="#1E90FF"
+                  stopColor="#1E90FF"
                   offset="0%"
                />
                <stop
-                  stop-color="#FF1E56"
+                  stopColor="#FF1E56"
                   offset="100%"
                />
             </linearGradient>
@@ -221,11 +221,11 @@ export const Icons = {
                id="b"
             >
                <stop
-                  stop-color="#1E90FF"
+                  stopColor="#1E90FF"
                   offset="0%"
                />
                <stop
-                  stop-color="#FF1E56"
+                  stopColor="#FF1E56"
                   offset="100%"
                />
             </linearGradient>
@@ -237,11 +237,11 @@ export const Icons = {
                id="c"
             >
                <stop
-                  stop-color="#1E90FF"
+                  stopColor="#1E90FF"
                   offset="0%"
                />
                <stop
-                  stop-color="#FF1E56"
+                  stopColor="#FF1E56"
                   offset="100%"
                />
             </linearGradient>
@@ -253,11 +253,11 @@ export const Icons = {
                id="d"
             >
                <stop
-                  stop-color="#1E90FF"
+                  stopColor="#1E90FF"
                   offset="0%"
                />
                <stop
-                  stop-color="#FF1E56"
+                  stopColor="#FF1E56"
                   offset="100%"
                />
             </linearGradient>
@@ -269,11 +269,11 @@ export const Icons = {
                id="e"
             >
                <stop
-                  stop-color="#1E90FF"
+                  stopColor="#1E90FF"
                   offset="0%"
                />
                <stop
-                  stop-color="#FF1E56"
+                  stopColor="#FF1E56"
                   offset="100%"
                />
             </linearGradient>
@@ -285,11 +285,11 @@ export const Icons = {
                id="f"
             >
                <stop
-                  stop-color="#1E90FF"
+                  stopColor="#1E90FF"
                   offset="0%"
                />
                <stop
-                  stop-color="#FF1E56"
+                  stopColor="#FF1E56"
                   offset="100%"
                />
             </linearGradient>

@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card"
 import { Icons } from "@/components/ui/icons"
 import { cn } from "@/lib/utils"
 import { ArrowRightCircleIcon, LinkIcon } from "@heroicons/react/24/outline"
-import ananest from "@public/ananest.png"
+import sparta from "@public/sparta.png"
 import Image from "next/image"
 
 const tools = [
@@ -105,7 +105,7 @@ export default function Home() {
             </h1>
             <p className="my-5">
                A full-stack developer based in Ukraine. I create all sorts of
-               websites, both functional and good-looking. With{" "}
+               websites, <br /> functional and good-looking. With{" "}
                <a
                   href="https://react.dev"
                   target="_blank"
@@ -126,7 +126,7 @@ export default function Home() {
                .
             </p>
             <a
-               href="https://blog.ananest.com"
+               href="https://www.soft.win"
                target="_blank"
                className={buttonVariants({ size: "lg" })}
                rel="noreferrer"
@@ -170,24 +170,24 @@ export default function Home() {
             </h3>
             <p className="md:mt-5">
                <Image
-                  src={ananest}
+                  src={sparta}
                   width={80}
                   height={40}
-                  alt="Ananest"
-                  className="md:-mt-2 mr-2 max-w-14 max-md:mt-4 max-md:mb-3 md:inline-block md:max-w-10"
+                  alt="Sparta Grounds"
+                  className="md:-mt-2 mr-2 max-w-[3.25rem] max-md:mt-4 max-md:mb-3 md:inline-block md:max-w-10"
                />
                <strong className="font-medium">
                   {" "}
                   Front-end at{" "}
                   <a
-                     href="https://ananest.com/"
+                     href="https://spartagrounds.com/"
                      className="underline"
                   >
-                     Ananest
+                     Sparta Grounds
                   </a>
                   .
                </strong>{" "}
-               Leading all front-end with a small team of back-end devs.
+               Building the web for land buyers in Canada.
             </p>
             <h3 className="mt-6 flex items-center gap-1.5 font-primary">
                2022{" "}
@@ -200,52 +200,13 @@ export default function Home() {
             <p className="md:mt-5">
                <Icons.upwork className="mr-2.5 h-8 w-14 max-md:mt-4 max-md:mb-2 md:inline-block md:w-10" />
                <strong className="font-medium">Upwork freelancing.</strong> Over
-               30 different projects with 100% Job Success.
+               40 different projects with 100% Job Success.
             </p>
          </section>
          <section className="mt-12 md:mt-16">
             <h2 className="mb-6 text-2xl">Recent projects</h2>
-            <div className="flex gap-2 border-b pb-6 max-md:flex-col md:gap-4">
-               <div className="flex items-center justify-between">
-                  <Image
-                     src={"/ananest-blog.png"}
-                     alt="Ananest blog"
-                     className="object-contain max-md:max-w-[56px]"
-                     width={58}
-                     height={58}
-                  />
-                  <a
-                     href="https://blog.ananest.com"
-                     target="_blank"
-                     className={cn(
-                        "mt-1 md:hidden",
-                        buttonVariants({ size: "sm", variant: "default" }),
-                     )}
-                     rel="noreferrer"
-                  >
-                     view live
-                     <LinkIcon className="ml-1 inline-block size-4" />
-                  </a>
-               </div>
-               <div className="w-full max-md:mt-1">
-                  <h3 className="flex items-center gap-3 font-medium font-primary text-lg">
-                     Ananest blog
-                     <a
-                        href="https://blog.ananest.com"
-                        target="_blank"
-                        className="ml-auto font-normal text-base underline max-md:hidden"
-                        rel="noreferrer"
-                     >
-                        view live
-                        <LinkIcon className="ml-1 inline-block size-4" />
-                     </a>
-                  </h3>
-                  <p className="mt-2">
-                     A static blog I coded at work. I also designed it!
-                  </p>
-               </div>
-            </div>
-            <div className="flex gap-2 border-b py-7 max-md:flex-col md:gap-4">
+
+            <div className="flex gap-2 border-b pb-7 max-md:flex-col md:gap-4">
                <div className="flex items-center justify-between">
                   <Image
                      src={"/winsoft.svg"}
