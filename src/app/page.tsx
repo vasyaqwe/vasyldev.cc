@@ -56,7 +56,7 @@ const tools = [
    },
    {
       name: "typescript",
-      href: "https://www.typescriptlang.org/",
+      href: "https://www.typescriptlang.org",
       logo: <Icons.typescript className="size-6" />,
    },
    {
@@ -64,21 +64,20 @@ const tools = [
       href: "https://bun.sh",
       logo: <Icons.bun className="size-7" />,
    },
-
    {
       name: "tailwindcss",
       href: "https://tailwindcss.com",
       logo: <Icons.tailwindcss className="size-[28px]" />,
    },
    {
-      name: "drizzle-orm",
-      href: "https://orm.drizzle.team/",
-      logo: <Icons.drizzle className="size-[31px]" />,
+      name: "upstash",
+      href: "https://upstash.com",
+      logo: <Icons.upstash className="size-[23px]" />,
    },
    {
-      name: "framer-motion",
-      href: "https://www.framer.com/motion/",
-      logo: <Icons.framerMotion className="size-[23px]" />,
+      name: "drizzle-orm",
+      href: "https://orm.drizzle.team",
+      logo: <Icons.drizzle className="size-[31px]" />,
    },
    {
       name: "next.js",
@@ -178,7 +177,7 @@ export default function Home() {
                />
                <strong className="font-medium">
                   {" "}
-                  Front-end at{" "}
+                  Full-stack engineer at{" "}
                   <a
                      href="https://spartagrounds.com/"
                      className="underline"
@@ -187,7 +186,7 @@ export default function Home() {
                   </a>
                   .
                </strong>{" "}
-               Building the web for land buyers in Canada.
+               Building the web for land buyers.
             </p>
             <h3 className="mt-6 flex items-center gap-1.5 font-primary">
                2022{" "}
