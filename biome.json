@@ -21,6 +21,7 @@
             "noUnusedTemplateLiteral": "off"
          },
          "correctness": {
+            "noUnusedVariables": "error",
             "noUnusedImports": "error"
          },
          "a11y": {
@@ -38,7 +39,7 @@
             }
          }
       },
-      "ignore": [".next/**"]
+      "ignore": ["routeTree.gen.ts", ".vinxi/**"]
    },
    "javascript": {
       "formatter": {

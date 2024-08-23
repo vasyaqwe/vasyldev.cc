@@ -1,10 +1,9 @@
+import { cn } from "@/lib/utils"
 import { type VariantProps, cva } from "class-variance-authority"
 import * as React from "react"
 
-import { cn } from "@/lib/utils"
-
 const buttonVariants = cva(
-   `inline-flex items-center justify-center whitespace-nowrap rounded-md
+   `inline-flex items-center justify-center whitespace-nowrap text-[0.95rem] leading-none rounded-lg
    ring-offset-background focus-visible:outline-none gap-1.5 
    focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 
    disabled:pointer-events-none disabled:opacity-80 border shadow-sm transition-all button hover:opacity-90`,
@@ -15,9 +14,9 @@ const buttonVariants = cva(
             outline: `bg-background hover:border-border border-border/70 backdrop-blur-md hover:bg-border/10 `,
          },
          size: {
-            default: "h-10 px-3",
-            sm: "h-9 px-2",
-            lg: "h-10 gap-2 px-4",
+            default: "h-9 px-2.5",
+            sm: "h-8 rounded-[0.6rem] px-2",
+            lg: "h-9 gap-2 rounded-xl px-3.5",
             icon: "size-8 gap-0",
          },
       },

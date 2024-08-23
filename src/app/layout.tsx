@@ -9,7 +9,7 @@ import { Outfit } from "next/font/google"
 const font = Outfit({ subsets: ["latin"], variable: "--font-primary" })
 
 export const metadata: Metadata = {
-   title: "vasyldev.cc",
+   title: "Vasyl Polishchuk",
    description: "Hi — I'm Vasyl, full-stack developer based in Ukraine.",
 }
 
@@ -21,14 +21,11 @@ export default function RootLayout({
    return (
       <html
          lang="en"
-         className={cn(
-            "font-primary text-sm leading-6 antialiased",
-            font.variable,
-         )}
+         className={cn("font-primary leading-5 antialiased", font.variable)}
       >
-         <body className=" pt-5">
+         <body className="pt-5 text-sm">
             <header className="container flex items-center justify-between pb-4">
-               <Icons.logo className="size-[22px] opacity-65" />
+               <Icons.logo className="size-[24px] opacity-65" />
                <nav>
                   <ul className="flex items-center gap-3">
                      <li>
@@ -75,7 +72,7 @@ export default function RootLayout({
                            href="https://cal.com/vasyldev/15min"
                            rel="noreferrer"
                         >
-                           contact me
+                           <span className="-mt-0.5"> contact me</span>
                            <ArrowRightCircleIcon className="mt-0.5 size-5" />
                         </a>
                      </li>

@@ -8,7 +8,7 @@ const config: Config = {
    theme: {
       container: {
          center: true,
-         padding: "1.25rem",
+         padding: "1rem",
          screens: {
             sm: "100%",
             md: "100%",
@@ -20,7 +20,8 @@ const config: Config = {
       extend: {
          fontSize: {
             xs: "0.85rem",
-            sm: "0.9rem",
+            sm: "0.9175rem",
+            base: "0.965rem",
          },
          colors: {
             border: "hsl(var(--border))",
@@ -37,12 +38,6 @@ const config: Config = {
                DEFAULT: "hsl(var(--accent))",
                foreground: "hsl(var(--accent-foreground))",
             },
-         },
-         borderRadius: {
-            xl: `calc(var(--radius) + 4px)`,
-            lg: `var(--radius)`,
-            md: `calc(var(--radius) - 6px)`,
-            sm: "calc(var(--radius) - 8px)",
          },
          fontFamily: {
             primary: "var(--font-primary)",

@@ -3,7 +3,6 @@ import { Card } from "@/components/ui/card"
 import { Icons } from "@/components/ui/icons"
 import { cn } from "@/lib/utils"
 import { ArrowRightCircleIcon, LinkIcon } from "@heroicons/react/24/outline"
-import sparta from "@public/sparta.png"
 import Image from "next/image"
 
 const tools = [
@@ -47,7 +46,7 @@ const tools = [
    {
       name: "turborepo",
       href: "https://turbo.build/repo",
-      logo: <Icons.turborepo className="size-6" />,
+      logo: <Icons.turborepo className="size-[22px]" />,
    },
    {
       name: "supabase",
@@ -57,12 +56,12 @@ const tools = [
    {
       name: "typescript",
       href: "https://www.typescriptlang.org",
-      logo: <Icons.typescript className="size-6" />,
+      logo: <Icons.typescript className="size-[22px]" />,
    },
    {
       name: "bun",
       href: "https://bun.sh",
-      logo: <Icons.bun className="size-7" />,
+      logo: <Icons.bun className="size-[27px]" />,
    },
    {
       name: "tailwindcss",
@@ -82,7 +81,7 @@ const tools = [
    {
       name: "next.js",
       href: "https://nextjs.org",
-      logo: <Icons.nextjs className="size-7" />,
+      logo: <Icons.nextjs className="size-[27px]" />,
    },
 ]
 
@@ -98,7 +97,7 @@ export default function Home() {
                   quality={95}
                   height={60}
                   priority
-                  className="-mt-1 mr-2 inline-block aspect-square size-11 rounded-2xl object-cover object-top"
+                  className="-mt-1 squircle mr-2 inline-block aspect-square size-10 object-cover object-top"
                />
                Hello — I'm Vasyl,
             </h1>
@@ -130,12 +129,13 @@ export default function Home() {
                className={buttonVariants({ size: "lg" })}
                rel="noreferrer"
             >
-               View latest project <ArrowRightCircleIcon className="size-5" />
+               <span className="-mt-px"> View latest project</span>
+               <ArrowRightCircleIcon className="size-5" />
             </a>
          </section>
          <section className="mt-12 md:mt-16">
             <h2 className="text-2xl">Tools & tech I use</h2>
-            <Card className="mt-4 flex flex-wrap justify-center gap-1 py-4 font-medium text-[1.05rem]">
+            <Card className="mt-4 flex flex-wrap justify-center gap-1 py-4 font-medium text-[1rem]">
                {tools.map((t) => (
                   <a
                      key={t.name}
@@ -169,7 +169,7 @@ export default function Home() {
             </h3>
             <p className="md:mt-5">
                <Image
-                  src={sparta}
+                  src={"/sparta.png"}
                   width={80}
                   height={40}
                   alt="Sparta Grounds"
@@ -232,14 +232,14 @@ export default function Home() {
                      <a
                         href="https://www.soft.win"
                         target="_blank"
-                        className="ml-auto font-normal text-base underline max-md:hidden"
+                        className="ml-auto font-normal text-sm underline max-md:hidden"
                         rel="noreferrer"
                      >
                         view live
                         <LinkIcon className="ml-1 inline-block size-4" />
                      </a>
                   </h3>
-                  <p className="mt-2">
+                  <p className="mt-1">
                      A landing page for a software development company.
                   </p>
                </div>
@@ -272,14 +272,14 @@ export default function Home() {
                      <a
                         href="https://www.wallow.app"
                         target="_blank"
-                        className="ml-auto font-normal text-base underline max-md:hidden"
+                        className="ml-auto font-normal text-sm underline max-md:hidden"
                         rel="noreferrer"
                      >
                         view live
                         <LinkIcon className="ml-1 inline-block size-4" />
                      </a>
                   </h3>
-                  <p className="mt-2">
+                  <p className="mt-1">
                      A real-time messaging & issue reporting app for teams.
                   </p>
                </div>
@@ -312,14 +312,14 @@ export default function Home() {
                      <a
                         href="https://volunteersforukraine.org/"
                         target="_blank"
-                        className="ml-auto font-normal text-base underline max-md:hidden"
+                        className="ml-auto font-normal text-sm underline max-md:hidden"
                         rel="noreferrer"
                      >
                         view live
                         <LinkIcon className="ml-1 inline-block size-4" />
                      </a>
                   </h3>
-                  <p className="mt-2">
+                  <p className="mt-1">
                      A landing page for a non-profit organization providing aid
                      in Ukraine.
                   </p>
@@ -338,7 +338,7 @@ export default function Home() {
                   )}
                   rel="noreferrer"
                >
-                  view all
+                  <span className="-mt-0.5"> view all</span>
                   <ArrowRightCircleIcon className="size-4" />
                </a>
             </div>
