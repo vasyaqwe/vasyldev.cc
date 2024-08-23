@@ -39,7 +39,7 @@
             }
          }
       },
-      "ignore": ["routeTree.gen.ts", ".vinxi/**"]
+      "ignore": [".next"]
    },
    "javascript": {
       "formatter": {
