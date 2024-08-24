@@ -85,7 +85,7 @@ const tools = [
    },
 ]
 
-export default function Home() {
+export default function Page() {
    return (
       <>
          <section className="mt-12 md:mt-16">
@@ -239,7 +239,7 @@ export default function Home() {
                         <LinkIcon className="ml-1 inline-block size-4" />
                      </a>
                   </h3>
-                  <p className="mt-1">
+                  <p className="mt-2">
                      A landing page for a software development company.
                   </p>
                </div>
@@ -279,7 +279,7 @@ export default function Home() {
                         <LinkIcon className="ml-1 inline-block size-4" />
                      </a>
                   </h3>
-                  <p className="mt-1">
+                  <p className="mt-2">
                      A real-time messaging & issue reporting app for teams.
                   </p>
                </div>
@@ -319,7 +319,7 @@ export default function Home() {
                         <LinkIcon className="ml-1 inline-block size-4" />
                      </a>
                   </h3>
-                  <p className="mt-1">
+                  <p className="mt-2">
                      A landing page for a non-profit organization providing aid
                      in Ukraine.
                   </p>

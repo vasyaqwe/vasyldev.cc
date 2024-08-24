@@ -5,6 +5,7 @@ import { Icons } from "@/components/ui/icons"
 import { cn } from "@/lib/utils"
 import { ArrowRightCircleIcon } from "@heroicons/react/24/outline"
 import { Outfit } from "next/font/google"
+import Link from "next/link"
 
 const font = Outfit({ subsets: ["latin"], variable: "--font-primary" })
 
@@ -25,7 +26,9 @@ export default function RootLayout({
       >
          <body className="pt-5 text-sm">
             <header className="container flex items-center justify-between pb-4">
-               <Icons.logo className="size-[24px] opacity-65" />
+               <Link href={"/"}>
+                  <Icons.logo className="size-[24px] opacity-65" />
+               </Link>
                <nav>
                   <ul className="flex items-center gap-3">
                      <li>
