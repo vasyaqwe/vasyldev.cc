@@ -7,11 +7,13 @@
       "indentWidth": 3,
       "lineEnding": "lf",
       "lineWidth": 80,
-      "attributePosition": "multiline",
-      "ignore": [".next/**"]
+      "attributePosition": "multiline"
    },
    "organizeImports": {
       "enabled": true
+   },
+   "files": {
+      "ignore": ["dist", ".wrangler", ".astro", "*.astro"]
    },
    "linter": {
       "enabled": true,
@@ -38,8 +40,7 @@
                }
             }
          }
-      },
-      "ignore": [".next"]
+      }
    },
    "javascript": {
       "formatter": {

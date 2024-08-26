@@ -1,0 +1,31 @@
+---
+import { buttonVariants } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
+import Layout from "@/layout/base.astro"
+import { MagnifyingGlassCircleIcon } from "@heroicons/react/24/outline"
+---
+
+<Layout
+  title="Not found"
+  description="This page does not exist — it may have been moved or deleted."
+>
+  <div class="grid h-screen place-items-center text-center">
+    <div class="-mt-36">
+      <div class="relative mb-6">
+        <Card
+          className="absolute inset-0 mx-auto grid h-28 w-[5.5rem] rotate-6 place-content-center rounded-xl"
+        />
+        <Card
+          className="-rotate-6 mx-auto grid h-28 w-[5.5rem] place-content-center rounded-xl"
+        >
+          <MagnifyingGlassCircleIcon className="size-9" />
+        </Card>
+      </div>
+      <h1 class="mb-1 font-semibold text-xl">Not found</h1>
+      <p class="mb-5 text-lg leading-snug opacity-70">
+        This page does not exist — <br /> it may have been moved or deleted.
+      </p>
+      <a href={"/"} class={buttonVariants()}>Back home</a>
+    </div>
+  </div>
+</Layout>

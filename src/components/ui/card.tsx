@@ -1,6 +1,6 @@
-import * as React from "react"
 import { cn } from "@/lib/utils"
 import { type VariantProps, cva } from "class-variance-authority"
+import * as React from "react"
 
 const cardVariants = cva(
    `border bg-muted border-border/60 text-muted-foreground p-3 rounded-2xl`,
@@ -17,9 +17,8 @@ const cardVariants = cva(
    },
 )
 
-export interface CardProps
-   extends React.ButtonHTMLAttributes<HTMLDivElement>,
-      VariantProps<typeof cardVariants> {}
+export type CardProps = React.ButtonHTMLAttributes<HTMLDivElement> &
+   VariantProps<typeof cardVariants>
 
 const Card = React.forwardRef<HTMLDivElement, CardProps>(
    ({ className, variant, ...props }, ref) => (
