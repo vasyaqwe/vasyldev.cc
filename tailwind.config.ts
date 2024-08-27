@@ -9,15 +9,15 @@ const config: Config = {
          screens: {
             sm: "100%",
             md: "100%",
-            lg: "594px",
-            xl: "594px",
-            "2xl": "594px",
+            lg: "604px",
+            xl: "604px",
+            "2xl": "604px",
          },
       },
       extend: {
          fontSize: {
             xs: "0.85rem",
-            sm: "0.9175rem",
+            sm: "0.95rem",
             base: "0.965rem",
             lg: "1.05rem",
          },

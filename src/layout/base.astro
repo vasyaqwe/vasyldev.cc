@@ -44,29 +44,15 @@ const url = "https://www.vasyldev.cc"
     <style>
       @font-face {
         font-family: "outfit";
-        src: url("/fonts/outfit-regular.woff2") format("woff2-variations");
+        src: url("/fonts/outfit.woff2") format("woff2-variations");
         font-display: swap;
         font-style: normal;
-        font-weight: 400;
-      }
-      @font-face {
-        font-family: "outfit";
-        src: url("/fonts/outfit-medium.woff2") format("woff2-variations");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 500;
+        font-weight: 400 600;
       }
     </style>
     <link
       rel="preload"
-      href="/fonts/outfit-regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="/fonts/outfit-medium.woff2"
+      href="/fonts/outfit.ttf"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
@@ -74,7 +60,7 @@ const url = "https://www.vasyldev.cc"
   </head>
   <body class="pt-5 text-sm">
     <header class="container flex items-center justify-between pb-4">
-      <a href={"/"}>
+      <a href={"/"} aria-label="Home">
         <Icons.logo className="size-[24px] opacity-65" />
       </a>
       <nav>

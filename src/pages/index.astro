@@ -100,6 +100,7 @@ const tools = [
       <Image
         src={"/avatar.jpg"}
         alt="Vasyl's avatar"
+        loading={"eager"}
         width={60}
         quality={95}
         height={60}
@@ -107,27 +108,23 @@ const tools = [
       />
       Hello — I'm Vasyl,
     </h1>
-    <p class="my-5">
-      A full-stack developer based in Ukraine. I create all sorts of websites, <br
-      /> functional and good-looking. With{" "}
-      <a
-        href="https://react.dev"
-        target="_blank"
-        class="underline"
-        rel="noreferrer"
-      >
-        React
-      </a>{" "}
-      &{" "}
-      <a
+    <p class="my-5 max-w-[50ch]">
+      A full-stack developer based in Ukraine. I create all <br
+        class="sm:hidden"
+      /> sorts of websites, functional and good-looking. <br
+        class="sm:hidden"
+      /> With{" "}
+      <a href="https://react.dev" target="_blank" rel="noreferrer">
+        <span class="underline">React</span>
+      </a>
+      &{" "}<a
         target="_blank"
         href="https://tanstack.com"
         rel="noreferrer"
         class="underline"
       >
-        Tanstack
+        <span class="underline">Tanstack</span>.
       </a>
-      .
     </p>
     <a
       href="https://www.soft.win"
@@ -159,7 +156,13 @@ const tools = [
             rel="noreferrer"
           >
             {typeof t.logo === "string" ? (
-              <Image width={25} height={25} src={t.logo} alt={t.name} />
+              <Image
+                width={25}
+                loading={"eager"}
+                height={25}
+                src={t.logo}
+                alt={t.name}
+              />
             ) : (
               <t.logo className={t.className} />
             )}
@@ -182,6 +185,7 @@ const tools = [
     </h3>
     <p class="md:mt-5">
       <Image
+        loading={"eager"}
         src={"/sparta.png"}
         width={80}
         height={40}
@@ -246,7 +250,7 @@ const tools = [
             <LinkIcon className="ml-1 inline-block size-4" />
           </a>
         </h3>
-        <p class="mt-2">A landing page for a software development company.</p>
+        <p class="mt-2.5">A landing page for a software development company.</p>
       </div>
     </div>
     <div class="flex gap-2 border-b py-7 max-md:flex-col md:gap-4">
@@ -284,7 +288,7 @@ const tools = [
             <LinkIcon className="ml-1 inline-block size-4" />
           </a>
         </h3>
-        <p class="mt-2">
+        <p class="mt-2.5">
           A real-time messaging & issue reporting app for teams.
         </p>
       </div>
@@ -324,8 +328,8 @@ const tools = [
             <LinkIcon className="ml-1 inline-block size-4" />
           </a>
         </h3>
-        <p class="mt-2">
-          A landing page for a non-profit organization providing aid in Ukraine.
+        <p class="mt-2.5">
+          A landing page for an organization providing aid in Ukraine.
         </p>
       </div>
     </div>
@@ -345,9 +349,10 @@ const tools = [
     </div>
     <Card className="mt-5">
       <p>
-        "<strong>Vasyl made a great well-animated website!</strong> He is amazing
-        in communication and problem-solving skills. Would like to hire again for
-        sure! Highly recommend Vasyl for the web development."
+        "<strong class="font-semibold">
+          Vasyl made a great well-animated website!
+        </strong> He is amazing in communication and problem-solving skills. Would
+        like to hire again for sure! Highly recommend Vasyl for the web development."
       </p>
       <p class="mt-2">
         Yurii Klymenko, CEO –{" "}
@@ -363,8 +368,9 @@ const tools = [
     </Card>
     <Card className="mt-2.5">
       <p>
-        "<strong>Vasyl is an amazing REACT developer.</strong> Top developer for
-        sure."
+        "<strong class="font-semibold">
+          Vasyl is an amazing REACT developer.
+        </strong> Top developer for sure."
       </p>
       <p class="mt-2">
         Charles Polanco, CEO –{" "}
@@ -380,8 +386,8 @@ const tools = [
     </Card>
     <Card className="mt-2.5">
       <p>
-        "<strong>Skilled developer</strong> with great communication skills! Highly
-        recommend!
+        "<strong class="font-semibold">Skilled developer</strong> with great communication
+        skills! Highly recommend!
       </p>
       <p class="mt-2">
         Ananstasia Usenko –{" "}
