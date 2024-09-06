@@ -1,41 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tailwindcss/preflight" layer(base);
+@import "tailwindcss/utilities" layer(utilities);
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 240 6% 10%;
+@theme default {
+  --color-background: #ffffff;
+  --color-foreground: #18181b;
+  --color-primary: #0a0a0b;
+  --color-muted: #f9fafb;
+  --color-muted-foreground: #5d626f;
+  --color-border: #dde0e4;
+  --color-ring: #ff8052;
 
-    --muted: 210 20% 98%;
-    --muted-foreground: 220 9% 43%;
+  --font-family-primary: "outfit", sans-serif;
+  --font-family-secondary: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
 
-    --primary: 240 6% 4%;
-    --secondary: 6 49% 60%;
-
-    --accent: 142 69% 58%;
-    --accent-foreground: 0 0% 100%;
-
-    --border: 216 12% 88%;
-
-    --ring: 16 100% 66%;
-
-    --shadow: 0px 0px 0px 1px rgba(9, 9, 11, 0.1),
-      0px 2px 2px 0px rgba(9, 9, 11, 0.08);
-
-    --font-primary: "outfit", sans-serif;
-    --font-secondary: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
+  --font-size-base: 0.94rem;
+  --font-size-base--line-height: 1.4rem;
 }
 
 @layer components {
@@ -145,6 +125,12 @@
     );
   }
 
+  .container {
+    margin-inline: auto;
+    padding-inline: 0.985rem;
+    width: min(100%, 604px);
+  }
+
   .button {
     line-height: -1;
   }
@@ -183,5 +169,10 @@ h3,
 h4,
 h5 {
   text-wrap: balance;
-  font-family: var(--font-secondary);
+  font-family: var(--font-family-secondary);
+}
+
+p {
+  max-width: var(--width-prose);
+  text-wrap: pretty;
 }

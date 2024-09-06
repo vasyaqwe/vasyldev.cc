@@ -116,15 +116,20 @@ const tools = [
       Hello — I'm Vasyl,
     </h1>
     <p class="my-5 max-w-[50ch]">
-      A full-stack developer based in Ukraine. I create all <br
-        class="sm:hidden"
-      /> sorts of websites, functional and good-looking. <br
-        class="sm:hidden"
-      /> With{" "}
-      <a href="https://react.dev" target="_blank" rel="noreferrer">
+      A full-stack developer based in Ukraine. I enjoy coding all sorts of
+      websites & apps, with the <a
+        href="https://react.dev"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span class="underline">React</span>
-      </a>
-      &{" "}<a
+      </a> & <a
+        href="https://www.typescriptlang.org"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span class="underline">TypeScript</span>
+      </a> ecosystem, and the tools from <a
         target="_blank"
         href="https://tanstack.com"
         rel="noreferrer"
@@ -156,10 +161,7 @@ const tools = [
             style={{
               transform: `rotate(${Math.random() > 0.5 ? 4 : -4}deg)`,
             }}
-            class={cn(
-              buttonVariants({ variant: "outline" }),
-              "max-sm:flex-grow",
-            )}
+            class={cn(buttonVariants({ variant: "outline" }), "max-sm:grow")}
             rel="noreferrer"
           >
             {isImageMetadata(t.logo) ? (
@@ -182,7 +184,7 @@ const tools = [
   <section class="mt-12 md:mt-16">
     <h2 class="text-2xl">Experience</h2>
 
-    <h3 class="mt-6 flex items-center gap-1.5 font-primary">
+    <h3 class="mt-6 flex items-center gap-1.5 !font-primary">
       2023{" "}
       <span class="h-px w-full bg-border">
         {" "}
@@ -209,7 +211,7 @@ const tools = [
       </strong>{" "}
       Building the web for land buyers.
     </p>
-    <h3 class="mt-6 flex items-center gap-1.5 font-primary">
+    <h3 class="mt-6 flex items-center gap-1.5 !font-primary">
       2022{" "}
       <span class="h-px w-full bg-border">
         {" "}
@@ -227,7 +229,9 @@ const tools = [
   </section>
   <section class="mt-12 md:mt-16">
     <h2 class="mb-6 text-2xl">Recent projects</h2>
-    <div class="flex gap-2 border-b pb-7 max-md:flex-col md:gap-4">
+    <div
+      class="flex gap-2 border-b border-border pb-7 max-md:flex-col md:gap-4"
+    >
       <div class="flex items-center justify-between">
         <Image src={winsoft} alt="Winsoft logo" width={58} height={58} />
         <a
@@ -244,22 +248,24 @@ const tools = [
         </a>
       </div>
       <div class="w-full max-md:mt-1">
-        <h3 class="flex items-center gap-3 font-medium font-primary text-lg">
+        <h3 class="flex items-center gap-3 font-medium !font-primary text-lg">
           Winsoft
           <a
             href="https://www.soft.win"
             target="_blank"
-            class="ml-auto font-normal text-sm underline max-md:hidden"
+            class="ml-auto font-normal underline max-md:hidden"
             rel="noreferrer"
           >
             view live
             <LinkIcon className="ml-1 inline-block size-4" />
           </a>
         </h3>
-        <p class="mt-2.5">A landing page for a software development company.</p>
+        <p class="mt-1.5">A landing page for a software development company.</p>
       </div>
     </div>
-    <div class="flex gap-2 border-b py-7 max-md:flex-col md:gap-4">
+    <div
+      class="flex gap-2 border-b border-border py-7 max-md:flex-col md:gap-4"
+    >
       <div class="flex items-center justify-between">
         <Image
           src={wallow}
@@ -282,19 +288,19 @@ const tools = [
         </a>
       </div>
       <div class="w-full max-md:mt-1">
-        <h3 class="flex items-center gap-3 font-medium font-primary text-lg">
+        <h3 class="flex items-center gap-3 font-medium !font-primary text-lg">
           Wallow
           <a
             href="https://www.wallow.app"
             target="_blank"
-            class="ml-auto font-normal text-sm underline max-md:hidden"
+            class="ml-auto font-normal underline max-md:hidden"
             rel="noreferrer"
           >
             view live
             <LinkIcon className="ml-1 inline-block size-4" />
           </a>
         </h3>
-        <p class="mt-2.5">
+        <p class="mt-1.5">
           A real-time messaging & issue reporting app for teams.
         </p>
       </div>
@@ -322,19 +328,19 @@ const tools = [
         </a>
       </div>
       <div class="w-full max-md:mt-1">
-        <h3 class="flex items-center gap-3 font-medium font-primary text-lg">
+        <h3 class="flex items-center gap-3 font-medium !font-primary text-lg">
           Volunteers for Ukraine
           <a
             href="https://volunteersforukraine.org/"
             target="_blank"
-            class="ml-auto font-normal text-sm underline max-md:hidden"
+            class="ml-auto font-normal underline max-md:hidden"
             rel="noreferrer"
           >
             view live
             <LinkIcon className="ml-1 inline-block size-4" />
           </a>
         </h3>
-        <p class="mt-2.5">
+        <p class="mt-1.5">
           A landing page for an organization providing aid in Ukraine.
         </p>
       </div>
