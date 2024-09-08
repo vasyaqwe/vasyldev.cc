@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils"
+import { cn } from "@/ui/utils"
 import { type VariantProps, cva } from "class-variance-authority"
 import * as React from "react"
 
@@ -27,7 +27,7 @@ const buttonVariants = cva(
    },
 )
 
-export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
    VariantProps<typeof buttonVariants> & {
       asChild?: boolean
    }
@@ -45,4 +45,4 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 )
 Button.displayName = "Button"
 
-export { Button, buttonVariants }
+export { Button, buttonVariants, type ButtonProps }
