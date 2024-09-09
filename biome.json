@@ -9,25 +9,45 @@
       "lineWidth": 80,
       "attributePosition": "multiline"
    },
-   "organizeImports": {
-      "enabled": true
-   },
    "files": {
       "ignore": ["dist", ".wrangler", ".astro", "*.astro"]
+   },
+   "javascript": {
+      "formatter": {
+         "jsxQuoteStyle": "double",
+         "trailingCommas": "all",
+         "semicolons": "asNeeded",
+         "arrowParentheses": "always",
+         "bracketSpacing": true,
+         "bracketSameLine": false,
+         "quoteStyle": "double",
+         "attributePosition": "multiline"
+      }
+   },
+   "organizeImports": {
+      "enabled": true
    },
    "linter": {
       "enabled": true,
       "rules": {
          "recommended": true,
+         "security": {
+            "noDangerouslySetInnerHtml": "off"
+         },
          "style": {
-            "noUnusedTemplateLiteral": "off"
+            "useNumberNamespace": "off",
+            "noUnusedTemplateLiteral": "off",
+            "useNodejsImportProtocol": "off"
          },
          "correctness": {
             "noUnusedVariables": "error",
             "noUnusedImports": "error"
          },
          "a11y": {
-            "noSvgWithoutTitle": "off"
+            "useMediaCaption": "off",
+            "noSvgWithoutTitle": "off",
+            "useKeyWithClickEvents": "off",
+            "useButtonType": "off"
          },
          "suspicious": {
             "noArrayIndexKey": "off"
@@ -40,17 +60,6 @@
                }
             }
          }
-      }
-   },
-   "javascript": {
-      "formatter": {
-         "jsxQuoteStyle": "double",
-         "trailingCommas": "all",
-         "semicolons": "asNeeded",
-         "arrowParentheses": "always",
-         "bracketSpacing": true,
-         "bracketSameLine": false,
-         "quoteStyle": "double"
       }
    }
 }

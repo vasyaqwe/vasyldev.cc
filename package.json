@@ -21,12 +21,12 @@
       "clsx": "^2.1.1",
       "react": "^18",
       "react-dom": "^18",
-      "tailwind-merge": "^2.5.2"
+      "tailwind-merge": "^2.5.2",
+      "@tailwindcss/postcss": "^4.0.0-alpha.23",
+      "tailwindcss": "^4.0.0-alpha.23"
    },
    "devDependencies": {
       "@biomejs/biome": "1.8.2",
-      "@tailwindcss/postcss": "^4.0.0-alpha.23",
-      "tailwindcss": "^4.0.0-alpha.23",
       "@types/node": "^20",
       "@types/react": "^18",
       "@types/react-dom": "^18",
