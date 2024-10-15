@@ -12,6 +12,11 @@
    "files": {
       "ignore": ["dist", ".wrangler", ".astro", "*.astro"]
    },
+   "css": {
+      "formatter": {
+         "enabled": true
+      }
+   },
    "javascript": {
       "formatter": {
          "jsxQuoteStyle": "double",
