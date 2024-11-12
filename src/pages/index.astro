@@ -8,7 +8,9 @@ import { ArrowRightCircleIcon, LinkIcon } from "@heroicons/react/24/outline"
 import { Image } from "astro:assets"
 import avatar from "@/assets/avatar.jpg"
 import tanstack from "@/assets/tanstack.png"
+import tracker from "@/assets/tracker.png"
 import winsoft from "@/assets/winsoft.svg"
+import recovery from "@/assets/recovery.svg"
 import vfu from "@/assets/vfu.svg"
 import spartagrounds from "@/assets/sparta.png"
 import { isImageMetadata } from "node_modules/astro/dist/assets/types"
@@ -148,9 +150,9 @@ const tools = [
     </a>
   </section>
   <section class="mt-12 md:mt-16">
-    <h2 class="text-2xl">Tools & tech I use</h2>
+    <h2 class="text-2xl mb-5">Tools & tech I use</h2>
     <Card
-      className="mt-4 flex flex-wrap justify-center gap-1 py-4 font-medium text-[1rem]"
+      className="flex flex-wrap justify-center gap-1 py-4 font-medium text-[1rem]"
     >
       {
         tools.map((t) => (
@@ -181,9 +183,9 @@ const tools = [
     </Card>
   </section>
   <section class="mt-12 md:mt-16">
-    <h2 class="text-2xl">Experience</h2>
+    <h2 class="text-2xl mb-7">Experience</h2>
 
-    <h3 class="mt-6 flex items-center gap-1.5 !font-primary">
+    <h3 class="flex items-center gap-1.5 !font-primary">
       2023{" "}
       <span class="h-px w-full bg-border">
         {" "}
@@ -198,7 +200,7 @@ const tools = [
         width={80}
         height={40}
         alt="Sparta Grounds logo"
-        class="md:-mt-2 mr-2 max-w-[3.25rem] max-md:mt-4 max-md:mb-3 md:inline-block md:max-w-10"
+        class="md:-mt-2 mr-2 max-w-12 max-md:mt-4 max-md:mb-3 md:inline-block md:max-w-10"
       />
       <strong class="font-medium">
         {" "}
@@ -227,13 +229,101 @@ const tools = [
     </p>
   </section>
   <section class="mt-12 md:mt-16">
-    <h2 class="mb-6 text-2xl">Recent projects</h2>
+    <h2 class="mb-7 text-2xl">Recent projects</h2>
+    <div
+      class="flex gap-2 border-b border-border pb-7 max-md:flex-col md:gap-4"
+    >
+      <div class="flex items-center justify-between max-md:mb-1">
+        <Image
+          src={recovery}
+          class={"max-w-20 md:max-w-12"}
+          alt="417 Recovery logo"
+          width={100}
+          height={100}
+        />
+        <a
+          href="https://417recovery.com"
+          target="_blank"
+          class={cn(
+            "md:hidden",
+            buttonVariants({ size: "sm", variant: "default" }),
+          )}
+          rel="noreferrer"
+        >
+          view live
+          <LinkIcon className="ml-1 inline-block size-4" />
+        </a>
+      </div>
+      <div class="w-full max-md:mt-1">
+        <h3
+          class="flex items-center gap-3 font-medium !font-primary text-lg -mt-1"
+        >
+          417 Recovery
+          <a
+            href="https://417recovery.com"
+            target="_blank"
+            class="ml-auto font-normal underline max-md:hidden text-base"
+            rel="noreferrer"
+          >
+            view live
+            <LinkIcon className="ml-1 inline-block size-4" />
+          </a>
+        </h3>
+        <p class="mt-1">
+          Static site for a clinically-based treatment program.
+        </p>
+      </div>
+    </div>
     <div
       class="flex gap-2 border-b border-border py-7 max-md:flex-col md:gap-4"
     >
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between max-md:mb-1">
+        <Image
+          src={tracker}
+          class={"max-w-12 max-md:-ml-px drop-shadow-[0px_1px_8px_rgba(24,24,24,.125)]"}
+          alt="Tracker logo"
+          width={60}
+          height={60}
+        />
+        <a
+          href="https://trackerhq.vercel.app"
+          target="_blank"
+          class={cn(
+            "md:hidden",
+            buttonVariants({ size: "sm", variant: "default" }),
+          )}
+          rel="noreferrer"
+        >
+          view live
+          <LinkIcon className="ml-1 inline-block size-4" />
+        </a>
+      </div>
+      <div class="w-full max-md:mt-1">
+        <h3
+          class="flex items-center gap-3 font-medium !font-primary text-lg -mt-1"
+        >
+          Tracker
+          <a
+            href="https://trackerhq.vercel.app"
+            target="_blank"
+            class="ml-auto font-normal underline max-md:hidden text-base"
+            rel="noreferrer"
+          >
+            view live
+            <LinkIcon className="ml-1 inline-block size-4" />
+          </a>
+        </h3>
+        <p class="mt-1">
+          Small app I created to track my work hours & earnings.
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex gap-2 border-b border-border py-7 max-md:flex-col md:gap-4"
+    >
+      <div class="flex items-center justify-between max-md:mb-1">
         <div
-          class="squircle max-md:-ml-[3px] grid size-[3.25rem] shrink-0 transform-gpu place-content-center bg-background bg-gradient-to-b from-[#1e1448]/70 to-[#1e1448] text-background"
+          class="squircle max-md:-ml-px grid size-12 shrink-0 transform-gpu place-content-center bg-background bg-gradient-to-b from-[#1e1448]/70 to-[#1e1448] text-background"
         >
           <svg
             viewBox="0 0 21 13"
@@ -267,7 +357,7 @@ const tools = [
           href="https://cuehq.app"
           target="_blank"
           class={cn(
-            "mt-1 md:hidden",
+            "md:hidden",
             buttonVariants({ size: "sm", variant: "default" }),
           )}
           rel="noreferrer"
@@ -277,7 +367,9 @@ const tools = [
         </a>
       </div>
       <div class="w-full max-md:mt-1">
-        <h3 class="flex items-center gap-3 font-medium !font-primary text-lg">
+        <h3
+          class="flex items-center gap-3 font-medium !font-primary text-lg -mt-1"
+        >
           Cue
           <a
             href="https://cuehq.app"
@@ -297,13 +389,19 @@ const tools = [
     <div
       class="flex gap-2 border-b border-border py-7 max-md:flex-col md:gap-4"
     >
-      <div class="flex items-center justify-between">
-        <Image src={winsoft} alt="Winsoft logo" width={58} height={58} />
+      <div class="flex items-center justify-between max-md:mb-1">
+        <Image
+          src={winsoft}
+          class={"max-w-12"}
+          alt="Winsoft logo"
+          width={60}
+          height={60}
+        />
         <a
           href="https://www.soft.win"
           target="_blank"
           class={cn(
-            "mt-1 md:hidden",
+            "md:hidden",
             buttonVariants({ size: "sm", variant: "default" }),
           )}
           rel="noreferrer"
@@ -313,7 +411,9 @@ const tools = [
         </a>
       </div>
       <div class="w-full max-md:mt-1">
-        <h3 class="flex items-center gap-3 font-medium !font-primary text-lg">
+        <h3
+          class="flex items-center gap-3 font-medium !font-primary text-lg -mt-1"
+        >
           Winsoft
           <a
             href="https://www.soft.win"
@@ -330,19 +430,19 @@ const tools = [
     </div>
 
     <div class="flex gap-2 pt-6 max-md:flex-col md:gap-4">
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between max-md:mb-1">
         <Image
           src={vfu}
           alt="Volunteers for Ukraine logo"
-          width={58}
-          height={58}
-          class="max-md:max-w-[54px]"
+          width={60}
+          height={60}
+          class="max-w-12"
         />
         <a
           href="https://volunteersforukraine.org/"
           target="_blank"
           class={cn(
-            "mt-1 md:hidden",
+            "md:hidden",
             buttonVariants({ size: "sm", variant: "default" }),
           )}
           rel="noreferrer"
@@ -352,7 +452,9 @@ const tools = [
         </a>
       </div>
       <div class="w-full max-md:mt-1">
-        <h3 class="flex items-center gap-3 font-medium !font-primary text-lg">
+        <h3
+          class="flex items-center gap-3 font-medium !font-primary text-lg -mt-1"
+        >
           Volunteers for Ukraine
           <a
             href="https://volunteersforukraine.org/"
@@ -371,7 +473,7 @@ const tools = [
     </div>
   </section>
   <section class="mt-12 md:mt-16">
-    <div class="flex items-center justify-between">
+    <div class="flex items-center mb-6 justify-between">
       <h2 class="text-2xl">Testimonials</h2>
       <a
         target="_blank"
@@ -383,7 +485,7 @@ const tools = [
         <ArrowRightCircleIcon className="size-4" />
       </a>
     </div>
-    <Card className="mt-5">
+    <Card>
       <p>
         "<b class="font-semibold">Vasyl made a great well-animated website!</b> He
         is amazing in communication and problem-solving skills. Would like to hire
