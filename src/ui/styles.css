@@ -144,12 +144,12 @@
    }
 }
 
-.no-scrollbar {
+.scrollbar-hidden {
    -ms-overflow-style: none;
    scrollbar-width: none;
 }
 
-.no-scrollbar::-webkit-scrollbar {
+.scrollbar-hidden::-webkit-scrollbar {
    display: none !important;
 }
 
